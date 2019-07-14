@@ -2,15 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { StarWarsPlanetComponent } from './star-wars-planet/star-wars-planet.component';
+import { StarWarsPlanetService } from './star-wars-planet/star-wars-planet.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StarWarsPlanetComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    StarWarsPlanetService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

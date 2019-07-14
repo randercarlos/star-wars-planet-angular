@@ -1,27 +1,45 @@
-# StarWarsPlanet
+# Exibidor de Planetas dos filmes do Star Wars.
+> Desafio para a vaga de Desenvolvedor Frontend na b2w digital.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+![](screenshot.png)
 
-## Development server
+## Pré-requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+- Interpretador Node v8+ junto com o NPM v6+
+- Browser atual
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Instalação e execução
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+**Windows, OS X & Linux:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Baixe o arquivo zip e o descompacte ou baixe o projeto para sua máquina através do git clone [https://github.com/randercarlos/star-wars-planet-angular.git](https://github.com/randercarlos/star-wars-planet-angular.git)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Entre no prompt de comando e vá até a pasta do projeto:
 
-## Further help
+```sh
+cd ir-ate-a-pasta-do-projeto
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Instale as dependências do node.js através do comando:
+
+```sh
+npm install
+```
+
+- Com as dependências instaladas, execute o comando:
+
+```sh
+ng serve
+```
+
+- Se tudo der certo, o terminal exibirá uma mensagem que o projeto estará rodando no [http://localhost:4200](http://localhost:4200).
+
+- Abra um navegador atual qualquer e execute o http://localhost:4200 para ver o projeto funcionando...
+
+## Autor
+
+Rander Carlos – randerccf@gmail.com

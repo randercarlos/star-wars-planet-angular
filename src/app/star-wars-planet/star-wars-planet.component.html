@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="star-war-planet">
+    <div class="star-war-planet-title">
+      {{ planet?.name }}
+    </div>
+    <div class="star-war-planet-details">
+      <span class="label">Population: <span class="normal">{{ planet?.population }}</span></span>
+      <span class="label">Climate: <span class="normal">{{ planet?.climate }}</span></span>
+      <span class="label">Terrain: <span class="normal">{{ planet?.terrain }}</span></span>
+      <span class="featured">Featured in {{ planet?.films?.length }} films </span>
+    </div>
+  </div>
+
+  <div class="button-next">
+    <input type="button" value="Next" (click)="loadPlanet()" [disabled]="showLoading" 
+      [ngClass]="{'button-disabled': showLoading === true}" />
+  </div>
+
+  <div class="loading" *ngIf="showLoading === true">
+    <h2>Loading...</h2>
+  </div>
+</div>
